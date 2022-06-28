@@ -1,0 +1,6 @@
+pane	uni	1	0	:-	1	rehanguha	:/home/rehanguha	1	bash	:
+pane	uni	2	1	:*	1	rehanguha	:/home/rehanguha	0	bash	:
+pane	uni	2	1	:*	2	rehanguha	:/home/rehanguha	1	docker	:docker run --rm -it -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes --user=root --name jupyter_datascience -e NB_UID=1001 -v /home/rehanguha:/home/jovyan/work jupyter/datascience-notebook:latest
+window	uni	1	:bash	0	:-	bd5d,211x54,0,0,0	:
+window	uni	2	:docker	1	:*	6cef,211x54,0,0{106x54,0,0,1,104x54,107,0,2}	:
+state	uni	

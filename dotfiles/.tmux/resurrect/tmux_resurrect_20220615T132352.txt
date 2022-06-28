@@ -1,0 +1,10 @@
+pane	Test	1	1	:*	1	rehanguha	:/home/rehanguha	1	bash	:
+pane	docker	1	1	:*	1	root@571d7b487ea8: ~/work/Documents/Temporary	:/home/rehanguha	0	bash	:
+pane	docker	1	1	:*	2	rehanguha	:/home/rehanguha/Documents/Temporary	0	bash	:
+pane	docker	1	1	:*	3	rehanguha	:/home/rehanguha/Documents/GitHub/rehanguha.github.io	1	bash	:
+pane	docker	2	0	:-	1	rehanguha	:/home/rehanguha	1	docker	:docker run --rm -it -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes --user=root --name jupyter_datascience -e NB_UID=1001 -v /home/rehanguha:/home/jovyan/work jupyter/datascience-notebook:latest
+pane	docker	2	0	:-	2	rehanguha	:/home/rehanguha/Documents/GitHub/rehanguha.github.io	0	docker	:docker run --rm --volume=/home/rehanguha/Documents/GitHub/rehanguha.github.io:/srv/jekyll -e JEKYLL_UID=1001 -e JEKYLL_GID=116 -p 4000:4000 jekyll/jekyll:4.0 jekyll serve
+window	Test	1	:bash	1	:*	ae5e,80x23,0,0,1	:
+window	docker	1	:general	1	:*	2c3a,211x54,0,0{105x54,0,0,2,105x54,106,0[105x24,106,0,3,105x29,106,25,4]}	off
+window	docker	2	:running	0	:-	6485,211x54,0,0{105x54,0,0,5,105x54,106,0,6}	off
+state	docker	Test

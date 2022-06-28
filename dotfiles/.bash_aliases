@@ -10,4 +10,4 @@ alias docker_jupyter_tensorflow='docker run --rm -it -p 8888:8888 -e JUPYTER_ENA
 alias docker_jupyter_datascience='docker run --rm -it -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes --user=root --name jupyter_datascience -e NB_UID=`id -u` -v "${PWD}":/home/jovyan/work jupyter/datascience-notebook:latest'
 alias docker_tensorflow_gpu='docker run -it --rm --gpus all --name tensorflow_gpu v-v "${PWD}":/tf/notebooks -p 8888:8888 tensorflow/tensorflow:latest-gpu-jupyter'
 alias python=python3
-alias docker_blog='docker run --rm --volume="$PWD:/srv/jekyll" -e JEKYLL_UID=1001 -e JEKYLL_GID=116 -p 4000:4000 jekyll/jekyll:4.0 jekyll serve'
+alias docker_blog='docker run --rm --volume="$PWD:/srv/jekyll" -e JEKYLL_UID=1001 -e JEKYLL_GID=116 -p 4000:4000 rehanguha/jekyll:blog-v1.0 jekyll serve'

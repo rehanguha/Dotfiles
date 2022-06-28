@@ -1,0 +1,9 @@
+pane	docker	1	1	:*	1	root@571d7b487ea8: ~	:/home/rehanguha	1	docker	:docker run --rm -it -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes --user=root --name jupyter_datascience -e NB_UID=1001 -v /home/rehanguha:/home/jovyan/work jupyter/datascience-notebook:latest bash
+pane	docker	1	1	:*	2	rehanguha	:/home/rehanguha	0	bash	:
+pane	docker	1	1	:*	3	rehanguha	:/home/rehanguha/Documents/GitHub/rehanguha.github.io	0	bash	:
+pane	docker	2	0	:-	1	rehanguha	:/home/rehanguha	1	bash	:
+pane	docker	2	0	:-	2	rehanguha	:/home/rehanguha	0	bash	:
+pane	docker	2	0	:-	3	rehanguha	:/home/rehanguha	0	bash	:
+window	docker	1	:contd	1	:*	344a,211x54,0,0{105x54,0,0,2,105x54,106,0[105x34,106,0,3,105x19,106,35,4]}	off
+window	docker	2	:jupyter	0	:-	bc67,211x54,0,0{105x54,0,0,5,105x54,106,0[105x25,106,0,6,105x28,106,26,7]}	off
+state	docker	

@@ -1,0 +1,3 @@
+pane	dotfiles	1	1	:*	1	rehanguha	:/home/rehanguha/Documents/GitHub/dotfiles	1	bash	:
+window	dotfiles	1	:bash	1	:*	bd5d,211x54,0,0,0	:
+state	dotfiles	

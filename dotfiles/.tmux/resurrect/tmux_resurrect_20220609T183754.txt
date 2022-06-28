@@ -1,0 +1,3 @@
+pane	docker	1	1	:*	1	rehanguha	:/home/rehanguha	1	bash	:
+window	docker	1	:bash	1	:*	bd5d,211x54,0,0,0	:
+state	docker	

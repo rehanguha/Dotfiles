@@ -1,0 +1,6 @@
+pane	Test	1	1	:*	1	rehanguha	:/home/rehanguha	1	bash	:
+pane	docker	1	1	:*	1	root@571d7b487ea8: ~/work/Documents/Temporary	:/home/rehanguha/Documents/GitHub/rehanguha.github.io	0	docker	:docker run --rm --volume=/home/rehanguha/Documents/GitHub/rehanguha.github.io:/srv/jekyll -e JEKYLL_UID=1001 -e JEKYLL_GID=116 -p 4000:4000 rehanguha/jekyll:blog-v1.0 jekyll serve
+pane	docker	1	1	:*	2	rehanguha	:/home/rehanguha	1	bash	:
+window	Test	1	:bash	1	:*	ae5e,80x23,0,0,1	:
+window	docker	1	:general	1	:*	e90f,211x54,0,0[211x27,0,0,2,211x26,0,28,8]	off
+state	docker	

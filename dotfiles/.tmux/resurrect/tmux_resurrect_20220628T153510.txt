@@ -1,0 +1,6 @@
+pane	dotfiles	1	0	:-	1	rehanguha	:/home/rehanguha/Documents/GitHub/dotfiles	1	vim	:vim setup.sh
+pane	dotfiles	2	1	:*	1	rehanguha	:/home/rehanguha/Documents/GitHub/dotfiles	0	bash	:
+pane	dotfiles	2	1	:*	2	rehanguha	:/home/rehanguha	1	bash	:
+window	dotfiles	1	:vim	0	:-	bd5d,211x54,0,0,0	:
+window	dotfiles	2	:bash	1	:*	6912,211x54,0,0[211x27,0,0,4,211x26,0,28,5]	:
+state	dotfiles	
