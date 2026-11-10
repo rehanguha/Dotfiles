@@ -111,3 +111,20 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+alias lab="source ~/.venvs/lab/bin/activate"
+
+newlab() {
+    if [ -z "$1" ]; then
+        echo "Usage: newlab <env_name>"
+        return 1
+    fi
+    python3 -m venv "$HOME/.venvs/$1"
+    LAB_SITE=$("$HOME/.venvs/lab/bin/python" -c "import site; print(site.getsitepackages()[0])")
+    EXP_SITE=$("$HOME/.venvs/$1/bin/python" -c "import site; print(site.getsitepackages()[0])")
+    echo "$LAB_SITE" > "$EXP_SITE/base_lab.pth"
+    source "$HOME/.venvs/$1/bin/activate"
+    echo "Created and activated '$1' inheriting packages from 'lab'."
+}
+
+
