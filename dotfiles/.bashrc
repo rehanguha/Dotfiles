@@ -127,4 +127,14 @@ newlab() {
     echo "Created and activated '$1' inheriting packages from 'lab'."
 }
 
+useenv() {
+    if [ -z "$1" ]; then
+        echo "Available environments:"
+        ls -1 "$HOME/.venvs"
+        return 0
+    fi
+    source "$HOME/.venvs/$1/bin/activate"
+}
+
+
 
